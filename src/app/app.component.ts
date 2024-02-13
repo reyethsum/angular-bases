@@ -1,13 +1,13 @@
+import { appConfig } from './app.config';
+import { AppModule } from './app.module';
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
+  template: './app.component.html',
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'bases';
+  public title: string = 'App de Angular, llamando el titulo';
+
 }
